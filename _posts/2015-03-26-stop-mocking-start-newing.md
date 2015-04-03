@@ -6,9 +6,15 @@ category:
 tags: []
 ---
 
+*Mock* has become so popular in agile development teams. Many disciplined teams won't write a unit test without mocked 
+dependencies. However, mock is not the silver-bullet. Instead, I find many teams using mock struggle with refactoring.
+Martin Fowler, Kent Beck and David David Heinemeier Hansson had a hangout last year, in which the shared their opinions
+on mocking.
+
 The substantial problem of mocking is that when you set up the dependencies with mock, you are assuming an implementation, because you know that the mocked method will be called.
 
 <div style="text-align:center"><img src ="/images/martinfowler-kentbeck-ddh.png" /></div>
+
 Martin Fowler, Kent Beck and David Heinemeier Hansson had [a hangout talking about TDD](http://martinfowler.com/articles/is-tdd-dead/), in which all three expressed their concerns around mocking from different angles. The videos last for more than one hour so here is [the text version](https://github.com/hedgeyedev/public_wiki/wiki/Is-TDD-Dead ) if you prefer. The hangout is not just about mocking. So I have attempted to summarise their concerns or comments on mocking below (extracted from the text version):
 
 * David Heinemeier Hansson does not agree with “isolated unit testing” because there tend to be “lots of mocks”.
