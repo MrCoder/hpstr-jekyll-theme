@@ -38,7 +38,7 @@ As NoSQL focuses on solving horizontal scalebility problem, P is a must-have fea
 
 \* Relation DB statisefy CA requirement. So they are single site cluster. When partition occurs, system blocks.
 
-![CAP Theorem and NoSQL Databases](/assets/images/NoSQL-CAP-Theorem.png)
+![CAP Theorem and NoSQL Databases](/images/NoSQL-CAP-Theorem.png)
 From: http://blog.nahurst.com/visual-guide-to-nosql-systems
 
 上图中的举例指的都是默认配置，有些DB在不同的配置中可以实现不同的偏好。比如，Terrastore在默认情况，如果Server连不上DB并不会尝试连接到master(s)。

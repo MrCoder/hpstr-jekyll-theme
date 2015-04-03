@@ -146,4 +146,4 @@ Make sure the following line is added to the html file:
 
 </ul>
 
-![Alt text](/assets/images/mailbox.png)
+![Alt text](/images/mailbox.png)

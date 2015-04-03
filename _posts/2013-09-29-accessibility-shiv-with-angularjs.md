@@ -19,10 +19,10 @@ The following is a typical input field(`input` is a [void element](http://dev.w3
 <input id="user-name" type="text"/>
 {% endhighlight %}
 And in the browser, it looks like this in a browser:
->![text input with label](/assets/images/input-element-ui.png "Input element with label")
+>![text input with label](/images/input-element-ui.png "Input element with label")
 
 We would like to add asterisk to the label, if the input field is required:
->![required input field with label](/assets/images/input-element-required-ui.png "Required input field with label")
+>![required input field with label](/images/input-element-required-ui.png "Required input field with label")
 
 The HTML element looks like:
 {% highlight html %}

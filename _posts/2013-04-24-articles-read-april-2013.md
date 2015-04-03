@@ -13,4 +13,4 @@ tags: []
 
 1. http://www.bloggermint.com/2011/06/css3-search-box-inspired-by-apple-com/
 > This articl talks about how to draw a search box with css3. The result looks like this:
-> ![Alt text](/assets/images/search-box.png)
+> ![Alt text](/images/search-box.png)
