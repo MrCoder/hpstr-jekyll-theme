@@ -5,13 +5,14 @@ description: ""
 category:
 tags: [javascript, reactjs, flux]
 ---
-
 When I read the [README of Flux](https://github.com/facebook/flux), I found it difficult to get the point of the following section:
 
 > We originally set out to deal correctly with derived data: for example, we wanted to show an unread count for message threads while another view showed a list of threads, with the unread ones highlighted. This was **difficult to handle with MVC** — marking a single thread as read would update the thread model, and then also need to update the unread count model. These dependencies and cascading updates often occur in a large MVC application, leading to a tangled weave of data flow and unpredictable results.
 
 ## Seriously, why it is "difficult to handle with MVC"?
-While different people have different understand of the old MVC, the typical structure looks like V to C has a 1 to 1 map and M to V/C has a 1 to many map. It works so good if the structure make sense. What makes it difficult is actually when you want to have a 1 to 1 map for M to V/C and all the Ms needs a machanism to be kept synced.
+While different people have different understand of the old MVC, the typical structure looks like V to C has a 1 to 1 map and M to V/C has a 1 to many map. It works so good if the structure make sense. What makes it difficult is actually when you want to have a 1 to 1 map for M to V/C and all the Ms needs a machanism to be kept synced. In the following diagram, Controller disappears (sort of merged into View), Store is nothing more than Model.
+
+<div style="text-align:center"><img src ="/images/flux-simple-f8-diagram-with-client-action-1300w.png" /></div>
 
 Say, for example, we have only one model for the two views - "an unread count for message threads" and "a list of threads, with unread ones highlighted". It is not SO difficult because when makring a single thread as read we can update the only one model, and it will not lead to "a tangled weave of data flow" or unpredictable results".
 
