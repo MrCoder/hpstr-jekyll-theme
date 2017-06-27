@@ -8,7 +8,9 @@ tags: [oracle, tablespace]
 
 ## How can I know which tablespace is MY default tablespace?
 
-`select * from DBA_USERS where USERNAME='MyADP';`
+````
+select * from DBA_USERS where USERNAME='MyADP';`
+````
 
 > Note: Not all users can do this. If your user does not have access to `DBA_USERS`, you may get
 > ````
