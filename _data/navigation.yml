@@ -1,4 +1,7 @@
 # Menu navigation links
 
-- title: Previous blogs (Chinese)
-  url: http://designpatterns.cnblogs.com
+- title: Theme Setup
+  url: /theme-setup/
+
+- title: External Link
+  url: http://mademistakes.com
