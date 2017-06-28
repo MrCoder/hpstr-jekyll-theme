@@ -30,3 +30,12 @@ FROM   (SELECT ...
 WHERE  ROWNUM <= ?
 ````
 Change `jpa.database-platform` to `org.hibernate.dialect.Oracle10gDialect` will produce the above query.
+
+## How to check the database version?
+
+Try
+````
+SELECT version FROM V$INSTANCE;
+// OR
+SELECT * FROM V$VERSION
+````
